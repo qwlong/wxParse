@@ -1,4 +1,3 @@
-
 <!--**
  * author: Di (微信小程序开发工程师)
  * organization: WeAppDev(微信小程序开发论坛)(http://weappdev.com)
@@ -19,7 +18,7 @@
 </template>
 
 <template name="wxParseImg">
-<image class="{{item.classStr}} wxParse-{{item.tag}}" data-from="{{item.from}}" data-src="{{item.attr.src}}"  data-idx="{{item.imgIndex}}"  src="{{item.attr.src}}" mode="aspectFit" bindload="wxParseImgLoad" bindtap="wxParseImgTap" style="width:{{item.width}}px;height:{{item.height}}px;{{item.attr.style}}"   />
+<image class="{{item.classStr}} wxParse-{{item.tag}}" data-from="{{item.from}}" data-src="{{item.attr.src}}"  data-idx="{{item.imgIndex}}"  src="{{item.attr.src}}" mode="aspectFit" bindload="wxParseImgLoad" bindtap="wxParseImgTap" mode="widthFix" style="width:{{item.width}}px;"   />
 </template>
 
 <template name="WxEmojiView">
@@ -122,7 +121,9 @@
 
 </template>
 
-<!--循环模版-->
+
+
+        <!--循环模版-->
 <template name="wxParse1">
 <!--<template is="wxParse2" data="{{item}}" />-->
 <!--判断是否是标签节点-->
@@ -852,7 +853,7 @@
 
 </template>
 
-        <!--循环模版-->
+<!--循环模版-->
 <template name="wxParse11">
 <!--<template is="wxParse12" data="{{item}}" />-->
 <!--判断是否是标签节点-->
@@ -925,10 +926,9 @@
 
 </template>
 
-
         <!--循环模版-->
 <template name="wxParse12">
-<!--<template is="wxParse12" data="{{item}}" />-->
+<!--<template is="wxParse13" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -999,10 +999,9 @@
 
 </template>
 
-
         <!--循环模版-->
 <template name="wxParse13">
-<!--<template is="wxParse12" data="{{item}}" />-->
+<!--<template is="wxParse14" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1075,7 +1074,7 @@
 
         <!--循环模版-->
 <template name="wxParse14">
-<!--<template is="wxParse12" data="{{item}}" />-->
+<!--<template is="wxParse15" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1146,9 +1145,9 @@
 
 </template>
 
-
+        <!--循环模版-->
 <template name="wxParse15">
-<!--<template is="wxParse12" data="{{item}}" />-->
+<!--<template is="wxParse16" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1219,9 +1218,9 @@
 
 </template>
 
-
+        <!--循环模版-->
 <template name="wxParse16">
-<!--<template is="wxParse12" data="{{item}}" />-->
+<!--<template is="wxParse17" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1292,8 +1291,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse17">
-<!--<template is="wxParse12" data="{{item}}" />-->
+<!--<template is="wxParse18" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1364,8 +1364,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse18">
-<!--<template is="wxParse12" data="{{item}}" />-->
+<!--<template is="wxParse19" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1436,8 +1437,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse19">
-<!--<template is="wxParse12" data="{{item}}" />-->
+<!--<template is="wxParse20" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1508,8 +1510,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse20">
-<!--<template is="wxParse20" data="{{item}}" />-->
+<!--<template is="wxParse21" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1580,8 +1583,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse21">
-<!--<template is="wxParse21" data="{{item}}" />-->
+<!--<template is="wxParse22" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1652,8 +1656,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse22">
-<!--<template is="wxParse22" data="{{item}}" />-->
+<!--<template is="wxParse23" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1724,8 +1729,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse23">
-<!--<template is="wxParse23" data="{{item}}" />-->
+<!--<template is="wxParse24" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1796,8 +1802,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse24">
-<!--<template is="wxParse24" data="{{item}}" />-->
+<!--<template is="wxParse25" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1868,8 +1875,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse25">
-<!--<template is="wxParse25" data="{{item}}" />-->
+<!--<template is="wxParse26" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -1940,8 +1948,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse26">
-<!--<template is="wxParse26" data="{{item}}" />-->
+<!--<template is="wxParse27" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2012,8 +2021,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse27">
-<!--<template is="wxParse27" data="{{item}}" />-->
+<!--<template is="wxParse28" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2084,8 +2094,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse28">
-<!--<template is="wxParse28" data="{{item}}" />-->
+<!--<template is="wxParse29" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2156,8 +2167,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse29">
-<!--<template is="wxParse29" data="{{item}}" />-->
+<!--<template is="wxParse30" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2228,8 +2240,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse30">
-<!--<template is="wxParse30" data="{{item}}" />-->
+<!--<template is="wxParse31" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2300,8 +2313,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse31">
-<!--<template is="wxParse31" data="{{item}}" />-->
+<!--<template is="wxParse32" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2372,8 +2386,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse32">
-<!--<template is="wxParse32" data="{{item}}" />-->
+<!--<template is="wxParse33" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2444,8 +2459,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse33">
-<!--<template is="wxParse33" data="{{item}}" />-->
+<!--<template is="wxParse34" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2516,8 +2532,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse34">
-<!--<template is="wxParse34" data="{{item}}" />-->
+<!--<template is="wxParse35" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2588,8 +2605,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse35">
-<!--<template is="wxParse35" data="{{item}}" />-->
+<!--<template is="wxParse36" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2660,8 +2678,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse36">
-<!--<template is="wxParse36" data="{{item}}" />-->
+<!--<template is="wxParse37" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2732,8 +2751,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse37">
-<!--<template is="wxParse37" data="{{item}}" />-->
+<!--<template is="wxParse38" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2804,8 +2824,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse38">
-<!--<template is="wxParse38" data="{{item}}" />-->
+<!--<template is="wxParse39" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2876,8 +2897,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse39">
-<!--<template is="wxParse39" data="{{item}}" />-->
+<!--<template is="wxParse40" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -2948,8 +2970,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse40">
-<!--<template is="wxParse40" data="{{item}}" />-->
+<!--<template is="wxParse41" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -3020,8 +3043,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse41">
-<!--<template is="wxParse41" data="{{item}}" />-->
+<!--<template is="wxParse42" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -3092,8 +3116,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse42">
-<!--<template is="wxParse42" data="{{item}}" />-->
+<!--<template is="wxParse43" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -3164,8 +3189,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse43">
-<!--<template is="wxParse43" data="{{item}}" />-->
+<!--<template is="wxParse44" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -3236,8 +3262,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse44">
-<!--<template is="wxParse44" data="{{item}}" />-->
+<!--<template is="wxParse45" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -3308,8 +3335,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse45">
-<!--<template is="wxParse45" data="{{item}}" />-->
+<!--<template is="wxParse46" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -3380,8 +3408,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse46">
-<!--<template is="wxParse46" data="{{item}}" />-->
+<!--<template is="wxParse47" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -3452,8 +3481,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse47">
-<!--<template is="wxParse47" data="{{item}}" />-->
+<!--<template is="wxParse48" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -3524,8 +3554,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse48">
-<!--<template is="wxParse48" data="{{item}}" />-->
+<!--<template is="wxParse49" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -3596,8 +3627,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse49">
-<!--<template is="wxParse49" data="{{item}}" />-->
+<!--<template is="wxParse50" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
@@ -3668,8 +3700,9 @@
 
 </template>
 
+        <!--循环模版-->
 <template name="wxParse50">
-<!--<template is="wxParse50" data="{{item}}" />-->
+<!--<template is="wxParse51" data="{{item}}" />-->
 <!--判断是否是标签节点-->
 <block wx:if="{{item.node == 'element'}}">
   <block wx:if="{{item.tag == 'button'}}">
